@@ -68,7 +68,7 @@ namespace Api
                 endpoints.MapControllers();
             });
 
-            //DbInitializer.Seed(app);
+          
         }
     }
 }

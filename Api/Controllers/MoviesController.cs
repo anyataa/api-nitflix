@@ -69,7 +69,7 @@ namespace Api.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(movies);
         }
 
         // POST: api/Movies

@@ -69,7 +69,7 @@ namespace Api.Controllers
                 }
             }
 
-            return NoContent();
+            return  Ok(customer);
         }
 
         // POST: api/Customers
@@ -77,6 +77,8 @@ namespace Api.Controllers
         [HttpPost]
         public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
+            //var member = _context.MembershipTypeItems.SingleOrDefault(m => m.Id == 4);
+            //customer.MembershipType = member;
             _context.CustomerItems.Add(customer);
             await _context.SaveChangesAsync();
 
